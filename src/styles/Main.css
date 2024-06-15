@@ -59,11 +59,33 @@
   max-width: 200px;
 }
 
+.online-menu-button {
+  background-color: #f4ce14;
+  color: #495e57;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  max-width: 200px;
+  position: absolute; /* Absolute Positionierung aktivieren */
+  right: 3.125rem; /* Abstand zum rechten Rand des Viewports */
+}
+
+.specials-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem; /* Abstand zwischen Header und Inhalt */
+  margin-top: 4rem;
+  position: relative;
+}
+
 .hero-image {
   grid-column: 6 / 9; /* Platziere das Bild in den letzten 4 Spalten */
   display: flex;
-  margin-top: 50px;
-  margin-right: 100px;
+  margin-top: 3.125rem;
+  margin-right: 6.25rem;
   justify-content: center;
   align-items: center;
 }
@@ -82,9 +104,67 @@
   margin-bottom: 20px; /* Unteren Rand anpassen */
 }
 
+.specials-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image {
+  width: 100%;
+  height: 16rem;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card p {
+  flex-grow: 1; /* Dies ermöglicht, dass der restliche Inhalt den verfügbaren Platz einnimmt */
+}
+
+.price {
+  color: #ee9972;
+  font-size: 1rem;
+}
+
+.order-link {
+  margin-top: 10px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.delivery-icon {
+  margin-left: 5px;
+}
+
 .highlights,
 .testimonials {
   margin-left: 50px; /* 50px Abstand auf der linken Seite */
+  margin-right: 50px;
+  margin-bottom: 50px;
 }
 
 .about {
@@ -95,13 +175,20 @@
 /* Begrenze die Größe des Bildes bei kleineren Bildschirmen */
 @media (max-width: 850px) {
   .hero-image img {
-    width: 200px; /* Setze eine feste Breite für kleinere Bildschirme */
+    width: 12.5rem; /* Setze eine feste Breite für kleinere Bildschirme */
   }
 }
 
 /* Begrenze die Größe des Bildes bei größeren Bildschirmen */
 @media (min-width: 1000px) {
   .hero-image img {
-    width: 300px; /* Setze eine feste Breite für größere Bildschirme */
+    width: 18.75rem; /* Setze eine feste Breite für größere Bildschirme */
+    right: 8.125rem;
   }
 }
+
+/* @media (min-width: 600px) {
+  .online-menu-button {
+    right: 8.125rem;
+  }
+} */
