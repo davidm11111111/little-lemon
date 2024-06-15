@@ -1,0 +1,36 @@
+.main {
+  padding: 0;
+  background-color: #fff;
+}
+
+.hero {
+  width: 100vw;
+  background-color: #495e57; /* Set background color for the Hero section */
+  color: #fff; /* Optional: set text color to white for better contrast */
+  padding: 1px; /* Add padding for spacing */
+  border-radius: 1px; /* Optional: add some border-radius for rounded corners */
+}
+
+.hero-content {
+  margin-left: 50px; /* Add 50px margin to the left side */
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.highlights,
+.testimonials {
+  margin-left: 50px; /* Add 50px margin to the left side */
+}
+
+.about {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}

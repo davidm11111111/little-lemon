@@ -1,24 +1,27 @@
 import React from "react";
+import "./styles/Main.css";
 
 function Main() {
   return (
-    <main>
-      <div>
-        <h2>Hero</h2>
-        <p>Name, Description, Image</p>
-      </div>
-      <div>
-        <h2>Highlights</h2>
-        <p>Online Menu, Button Link, This weeks specials</p>
-      </div>
-      <div>
-        <h2>Testimonials</h2>
+    <main className="main">
+      <section className="hero">
+        <div className="hero-content">
+          <h2 className="section-title">Hero</h2>
+          <p>Name, Description, Image</p>
+        </div>
+      </section>
+      <section className="highlights">
+        <h2 className="section-title">Highlights</h2>
+        <p>Online Menu, Button Link, This week's specials</p>
+      </section>
+      <section className="testimonials">
+        <h2 className="section-title">Testimonials</h2>
         <p>Star ratings, user profile, photo, review</p>
-      </div>
-      <div>
-        <h2>About</h2>
+      </section>
+      <section className="about">
+        <h2 className="section-title">About</h2>
         <p>Name, Description, Photos</p>
-      </div>
+      </section>
     </main>
   );
 }
