@@ -6,6 +6,7 @@ function Nav() {
   return (
     <nav className="nav">
       <img src={logo} alt="Little Lemon Logo" />
+
       <ul>
         <li>
           <a href="#home">Home</a>
