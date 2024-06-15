@@ -76,9 +76,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem; /* Abstand zwischen Header und Inhalt */
+  margin-bottom: 2rem;
   margin-top: 4rem;
-  position: relative;
 }
 
 .hero-image {
