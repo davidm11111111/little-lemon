@@ -4,6 +4,10 @@ import restaurantImage from "./media/restauranfood.jpg"; // Korrekt importieren
 import greekSaladImage from "./media/greeksalad.jpg";
 import bruschettaImage from "./media/bruchetta.svg";
 import lemonDessertImage from "./media/lemondessert.jpg";
+import user1 from "./media/user1.jpeg";
+import user2 from "./media/user2.jpeg";
+import user3 from "./media/user3.jpeg";
+import user4 from "./media/user4.jpeg";
 
 function Main() {
   return (
@@ -92,7 +96,64 @@ function Main() {
         </section>
         <section className="testimonials">
           <h2 className="section-title">Testimonials</h2>
-          <p>Star ratings, user profile, photo, review</p>
+          <div className="testimonials-content">
+            <div className="testimonial">
+              <div className="rating">★★★★★</div>
+              <div className="testimonial-body">
+                <img
+                  src={user1}
+                  alt="Tilly Sanders"
+                  className="testimonial-image"
+                />
+                <div className="testimonial-info">
+                  <p className="name">Tilly Sanders</p>
+                  <p className="review">"This is the best restaurant!"</p>
+                </div>
+              </div>
+            </div>
+            <div className="testimonial">
+              <div className="rating">★★★★☆</div>
+              <div className="testimonial-body">
+                <img
+                  src={user2}
+                  alt="Jane Smith"
+                  className="testimonial-image"
+                />
+                <div className="testimonial-info">
+                  <p className="name">Jane Smith</p>
+                  <p className="review">"Great food and friendly staff."</p>
+                </div>
+              </div>
+            </div>
+            <div className="testimonial">
+              <div className="rating">★★★★★</div>
+              <div className="testimonial-body">
+                <img
+                  src={user3}
+                  alt="Alice Johnson"
+                  className="testimonial-image"
+                />
+                <div className="testimonial-info">
+                  <p className="name">Alice Johnson</p>
+                  <p className="review">"I highly recommend this place!"</p>
+                </div>
+              </div>
+            </div>
+            <div className="testimonial">
+              <div className="rating">★★★★☆</div>
+              <div className="testimonial-body">
+                <img
+                  src={user4}
+                  alt="Jacky Brown"
+                  className="testimonial-image"
+                />
+                <div className="testimonial-info">
+                  <p className="name">Jacky Brown</p>
+                  <p className="review">"Very good experience overall."</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
         <section className="about">
           <h2 className="section-title">About</h2>

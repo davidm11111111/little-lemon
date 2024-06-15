@@ -5,7 +5,7 @@ import logo from "./Logo.svg";
 function Nav() {
   return (
     <nav className="nav">
-      <img src={logo} alt="Little Lemon Logo" />
+      <img className src={logo} alt="Little Lemon Logo" />
 
       <ul>
         <li>
